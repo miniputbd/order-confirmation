@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Miniput | Order Confirmed">
 <meta property="og:description" content="Miniput Order Confirmation">
-<meta property="og:image" content="https://miniputbd.github.io/miniput-order-confirmation/order-confirmation.jpg">
+<meta property="og:image" content="https://miniputbd.github.io/order-confirmation/order-confirmation.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
 <meta property="og:image:alt" content="Miniput Order Confirmation">
@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Miniput | Order Confirmed">
 <meta name="twitter:description" content="Miniput Order Confirmation">
-<meta name="twitter:image" content="https://miniputbd.github.io/miniput-order-confirmation/order-confirmation.jpg">
+<meta name="twitter:image" content="https://miniputbd.github.io/order-confirmation/order-confirmation.jpg">
 
 <style>
 :root{
@@ -334,6 +334,17 @@ body::before{
 }
 
 .timelineTable .saBlock{
+  background:var(--redSoft);
+  color:#a45645;
+}
+
+/* Full-row service colors */
+.timelineTable .pathaoRow td{
+  background:var(--greenSoft);
+  color:#60705b;
+}
+
+.timelineTable .saRow td{
   background:var(--redSoft);
   color:#a45645;
 }
@@ -704,36 +715,36 @@ body::before{
 
       <tbody>
 
-        <tr>
+        <tr class="pathaoRow">
           <td rowspan="3" id="homeService" class="serviceBlock pathaoBlock">হোম ডেলিভারি
 (পাঠাও কুরিয়ার)</td>
           <td id="homeCity">চট্টগ্রাম শহরের মধ্যে</td>
           <td id="homeCityTime">একই দিন অথবা পরদিন</td>
         </tr>
 
-        <tr>
+        <tr class="pathaoRow">
           <td id="homeDhaka">ঢাকা এবং কক্সবাজার</td>
           <td id="homeDhakaTime">১–২ দিন</td>
         </tr>
 
-        <tr>
+        <tr class="pathaoRow">
           <td id="homeOther">অন্যান্য জেলা</td>
           <td id="homeOtherTime">২–৩ দিন</td>
         </tr>
 
-        <tr>
+        <tr class="saRow">
           <td rowspan="3" id="officeService" class="serviceBlock saBlock">এস এ পরিবহন
 অফিস ডেলিভারি</td>
           <td id="officeChattogram">চট্টগ্রাম বিভাগের মধ্যে</td>
           <td id="officeChattogramTime">১ দিন</td>
         </tr>
 
-        <tr>
+        <tr class="saRow">
           <td id="officeDhaka">ঢাকা এবং গাজীপুর</td>
           <td id="officeDhakaTime">১ দিন</td>
         </tr>
 
-        <tr>
+        <tr class="saRow">
           <td id="officeOther">অন্যান্য জেলা</td>
           <td id="officeOtherTime">২ দিন</td>
         </tr>
